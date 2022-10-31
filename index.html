@@ -1,6 +1,112 @@
-<ol>
-  <li><a href="http://example.com/">Example.com</a></li>
-  <li><a href="https://example.com/">Example.com</a></li>
-  <li><a href="ftp://example.com/">Example.com</a></li>
-  <li><a href="ftp://login:pass@serv.example.com/">Example.com</a></li>
-</ol>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Задание1 для WEB</title>
+    <style></style>
+      </head>
+      <body>
+        <ol>
+          <li><a HREF="http://example.com"> гипперссылка example.com </a></li>
+          <li><a HREF="https://example.com"> гипперссылка example.com c https </a></li>
+          <li><a HREF="ftp://wikipedia.org"> ftp без авторизации </a></li>
+          <li><a HREF="ftp://admin:2206@wikipedia.org"> ftp с авторизацией </a></li>
+          <li><a HREF="https://www.kubsu.ru/ru/education"> фрагмент некоторого сайта </a></li>
+          <li><a href="#form"> Фрагмент текущей страницы </a></li>
+          <li><a href="https://youtu.be/8R1zgn2iZVQ?t=105&lang=ru"> Cсылку с двумя параметрами в URL </a></li>
+          <li>
+            Навигация по сайту: <br>
+            <ul>
+              <li><a href="https://turkru.tv" title="home"> Главная </a></li>
+              <li><a href="https://turkru.tv/new/" title="new"> Новое </a></li>
+              <li><a href="https://turkru.tv/schedule/" title="
+              timetable"> Расписание </a></li>
+              <li><a href="https://turkru.tv/#catalog" title="catalog">Каталог </a></li>
+            </ul><br>
+          </li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href="">Ссылка с пустым href</a></li>
+            <li><a href="http://example.com/" rel="nofollow">Cсылку, по которой запрещен переход поисковикам</a></li>
+            <li><a href="http://example.com/" rel="noindex">
+              <!--noindex-->
+              Ссылка, запрещённая для индексации
+              <!--/noindex--> </a></li>
+            <li><p>Задание выполнено
+            <a href="https://vk.com/gaya_jk">Гаяне Бояхчян</a></p></li>
+            <li> Ссылка-изображение<br>
+                <a href="https://turkru.tv">
+                   <img src="https://i.ytimg.com/vi/2pLsInAMg-g/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCXVe9ntWM_sOwsGaYRJVCvgpIPZg" width="480" height="360" alt="Тур.сериалы">
+            </a>
+            </li> 
+            <li> Ссылка из круглых и прямоугольных областей<br>
+               <img src="https://i.ytimg.com/vi/2pLsInAMg-g/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCXVe9ntWM_sOwsGaYRJVCvgpIPZg" width="480" height="360" alt="Тур.сериалы" usemap="#click">
+               <map name="click">
+                <area shape="circle" coords="126,178,23" href="https://turkru.tv" alt="turk">
+                <area shape="rect" coords="165,160,381,204" href="https://turkru.tv" alt="turk">
+                </map></li>
+            <li><a href="./prosto_tak.html">Ссылка в текущем каталоге</a></li>
+            <li><a href="./about/prosto_tak.html">Ссылка в каталоге about</a></li>
+            <li><a href="../prosto_tak.html">Ссылка на уровень выше</a></li>
+            <li><a href="../../prosto_tak.html">Ссылка на 2 уровеня выше</a></li>
+            <li><a href="/">Сокращённая на главную</a></li>
+            <li><a href="/form.html">Сокращённая на внутреннюю</a></li>
+            </ol>
+            <h2>Форма</h2>
+            <form method="POST" id="form">
+            <label>
+            Имя:<br>
+            <input name="field-name" placeholder="Введите имя"></label><br>
+            <label>
+            e-mail:<br>
+            <input name="field-email"
+                  placeholder="name@example.com" type="email"></label><br>
+            <label>
+            Дата рождения:<br>
+            <input name="field-date" type="date"></label><br>
+            Пол:<br>
+            <label><input type="radio" checked="checked"
+                  name="radio-sex" value="Значение1">
+            М</label>
+            <label><input type="radio"
+                  name="radio-sex" value="Значение2">
+            Ж</label><br>
+            Количество конечностей:<br>
+            <label><input type="radio" checked="checked"
+                  name="radio-limb" value="Значение1">
+            0</label>
+            <label><input type="radio"
+                  name="radio-limb" value="Значение2">
+            1</label>
+            <label><input type="radio"
+                  name="radio-limb" value="Значение3">
+            2</label>
+            <label><input type="radio"
+                  name="radio-limb" value="Значение4">
+            3</label>
+            <label><input type="radio" name="radio-limb" 
+                  value="Значение5">
+            4</label><br />
+            <label><input type="radio" name="radio-limb"
+                   value="Значение6">
+            Более</label><br>
+            <label>
+            Суперсила:
+            <br>
+            <select size ="3" name="supper">
+            <option>бессмертие</option>
+            <option>прохождение сквозь стены</option>
+            <option>левитация</option>
+            </select>
+            </label><br>
+            <label>
+            Биография:<br>
+            <textarea name="bio" placeholder="Расскажите о себе"></textarea>
+            </label><br>
+            С контрактом ознакомлен:<br>
+            <label><input type="checkbox"
+                    name="check" />
+            ДА</label><br>
+            <input type="submit" value="Отправить">
+        </form>
+  </body>
+</html>
+
